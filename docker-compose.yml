@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  tps-admin-portal:
+    build:
+      context: ..
+      dockerfile: gateway/Dockerfile
+    container_name: tps-admin-portal
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    networks:
+      - tps-network
+
+networks:
+  tps-network:
+    driver: bridge
