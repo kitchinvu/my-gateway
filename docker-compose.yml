@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  tps-admin-portal:
+  gateway-module:
     build:
-      context: ..
-      dockerfile: gateway/Dockerfile
-    container_name: tps-admin-portal
+      context: .
+      dockerfile: Dockerfile
+    container_name: gateway-module
     ports:
       - "80:80"
     restart: unless-stopped

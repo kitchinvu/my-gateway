@@ -1,0 +1,8 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "Gateway application",
+  "scripts": {
+    "build": "echo 'Build completed'"
+  }
+}
